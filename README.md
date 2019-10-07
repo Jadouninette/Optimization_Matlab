@@ -17,3 +17,12 @@ For the Cubic interpolation methods
 -	Newton method
 -	Quasi Newton method
 -	Secant method
+
+Constrained Optimization methods
+
+Structural Optimization methods
+
+Application of the MATLAB optimization Toolbox
+
+Unconstrained Optimization methods
+
