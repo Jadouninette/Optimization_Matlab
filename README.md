@@ -9,11 +9,11 @@ This folder contains :
 
 1D Minimization methods
 
-/i For the Elimination methods
+_ _For the Elimination methods_ _
 -	Fibonacci Method
 -	Golden Section
 
-/i For the Cubic interpolation methods
+_ _For the Cubic interpolation methods_ _
 -	Newton method
 -	Quasi Newton method
 -	Secant method
