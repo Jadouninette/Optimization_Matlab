@@ -1,4 +1,4 @@
-# Optimatlab
+# Optimization codes in matlab
 
 ** **This repository contains the codes for the Optimization course in matlab.
 If you see any error or a way to improve, pull a request.
