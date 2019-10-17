@@ -1,3 +1,10 @@
+%%Cours d'optimisation%%
+%%STUDENT ID P46077098%%
+%% If you see any mistake or any upgrade, please report %%
+%% Xiexie-Merci %% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%FIBONACCI METHOD%%
+
 clc;
 clear all;
 
@@ -5,8 +12,10 @@ n=input('Enter the no of iterations : \n');
 
 a=input('\n Enter lower limit : \n'); 
 b=input('\n\nEnter upper limit : \n');
-%fonction = input(Enter the objective function : \n);
-fonction = @(x)(-((0.5/(1+x^2)^0.5)-((1+x^2)^0.5)*(1-0.5/(1+x^2))+x));
+
+%fonction = input('Enter the objective function : \n');
+fonction = @(x) objfunction(x);
+
 %Fibo coeff
 f1=1;
 f2=1;
@@ -15,7 +24,7 @@ N=n+1;
 %calcul des coefficients de fibo
 for i=1:N
     if i==1 || i==2 %optionnel vu que deja mit en haut
-    f(i)=1; %correspond a f1 et f2
+    f(i)=1; %equivalent to f1 et f2
    continue;
     end
     f(i)=f1+f2;
@@ -66,6 +75,6 @@ end
 
 feval=fonction(a);
 fprintf('The final interval is [%f ; %f ] \n',a,b);
-fprintf('fmax(lambda) is : %f',feval);
+fprintf('fmax(lambda) is : %f \n',feval);
 
     
