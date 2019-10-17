@@ -1,18 +1,25 @@
+%%Cours d'optimisation%%
+%%STUDENT ID P46077098%%
+%% If you see any mistake or any upgrade, please report %%
+%% Xiexie-Merci %% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%GOLDEN SECTION METHOD%%
+
 clc;
 close all;
 clear all;
+sym x;
 
 n=input('Enter the no of iterations : \n');
 a=input('\n Enter lower limit : \n'); 
 b=input('\n\nEnter upper limit : \n');
-%fonction = input(Enter the objective function : \n);
 
-fonction = @(x)(-((0.5/(1+x^2)^0.5)-((1+x^2)^0.5)*(1-0.5/(1+x^2))+x));
+fonction = @(x) objfunction(x);
 
-
+%Parameters for the method
 gammaR=(1+sqrt(5))/2; %Golden section number
 N=n+1;
-L2=(b-a)*gammaR^-2; %L2star dans le cours
+L2=(b-a)*gammaR^-2; %L2star from the class
 j=2;
 
 %Methode de Golden Section
@@ -48,9 +55,9 @@ j=j+1;
 end
 
 feval=fonction(a);
-disp('The final interval is  : ');disp(a);
+disp('The final interval is  : \n');disp(a);
 disp(b);
-disp('fmax(lambda) is : ');
+disp('fmax(lambda) is : \n');
 disp(feval);
 
     
