@@ -1,14 +1,22 @@
+%%Cours d'optimisation%%
+%%STUDENT ID P46077098%%
+%% If you see any mistake or any upgrade, please report %%
+%% Xiexie-Merci %% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Augmented Lagrange function for constrained optimization%%
 
 clc;
 clear all;
 close all
 
+%N iteration number
 N = 3;                        
-% iteration number
-n = 2;                       
 % n variables
-x = sym('x', [1 n]);
+n = 2;    
+
 % set variables for iterations
+x = sym('x', [1 n]);
+
 
 m = 1; % m  is the nbr of equality equations
 lambda = sym('lambda', [1,m]);  % set variables
