@@ -1,0 +1,17 @@
+%%Cours d'optimisation%%
+%%STUDENT ID P46077098%%
+%% If you see any mistake or any upgrade, please report %%
+%% Xiexie - Merci %% 
+
+Chapter 3 : Classical Optimization techniques for 1D Minimazation Methods 
+
+Elimination methods
+- Fibonacci
+- Golden
+
+Cubic interpolation methods - Direct root methods
+- Newton
+- Quasi Newton
+- Secant
+
+Objective function need to be updated for each problem
